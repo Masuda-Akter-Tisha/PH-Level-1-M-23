@@ -27,7 +27,7 @@ console.log('external file');
 
         //same same but different
         const btnMakeOrange = document.getElementById ('btn-make-orange');
-        btnMakeOrange.addEventListener ('click',makeOrange)
+        btnMakeOrange.addEventListener ('mouseout',makeOrange)
         function makeOrange () {
             document.body.style.backgroundColor = 'orange';
         }
