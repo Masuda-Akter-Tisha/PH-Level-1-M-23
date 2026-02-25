@@ -17,7 +17,7 @@ btnLogin.addEventListener ('click', function () {
 //3
 const btnUpdate = document.getElementById ('btn-update');
 btnUpdate.addEventListener ('click', function () {
-    //console.log('button clicked');
+     //console.log('button clicked');
     const inputName = document.getElementById ('input-name');
     // console.log(inputName);
     const name = inputName.value;
@@ -25,3 +25,4 @@ btnUpdate.addEventListener ('click', function () {
     const userName = document.getElementById ('user-name');
     userName.innerText = name;
   })
+
