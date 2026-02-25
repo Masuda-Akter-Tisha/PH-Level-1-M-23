@@ -1,15 +1,27 @@
-//1
+//step1-set an event handler to the button
   const btnPostComment = document.getElementById ('btn-post-comment');
   btnPostComment.addEventListener ('click', function () {
     // console.log('clicked button');
-    const commentBox = document.getElementById ('comment-box');
-    console.log(commentBox);
-    const commentText = commentBox.value;
-    console.log(commentText);
-    const sectionElement = document.getElementById ('section-container');
-    const para = document.createElement ('p');
-    para.innerText = commentText;
-    para.setAttribute ('id','comment');
-    para.classList.add ('comment-style');
-    sectionElement.appendChild (para);
+
+    //step2-get the text written in the textarea
+    const commentTextBox = document.getElementById ('comment-text-box');
+    // console.log(commentTextBox);
+    const newComment = commentTextBox.value;
+    // console.log(newComment);
+
+    //step3-get the parent node where to publish
+    const commentContainer = document.getElementById ('comment-container');
+    // console.log('commentContainer');
+
+    // step4-create a comment p and set the innerText
+    const newPara = document.createElement ('p');
+    newPara.innerText = newComment;
+    newPara.setAttribute ('id','comment');
+    newPara.classList.add ('comment-style');
+
+    //step5-append the new p tag to the parent node
+    commentContainer.appendChild (newPara);
+    
+    //step6-clean the text area
+    commentTextBox.value = '';
   })
