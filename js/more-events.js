@@ -45,8 +45,12 @@ btnMouse.addEventListener ('mouseup', function () {
 // userEmail.addEventListener ('blur', function () {
 //     console.log('user done with email');
 // })
-//key event
+//keyboard event
+// const userEmail2 = document.getElementById ('user-email');
+// userEmail2.addEventListener ('keydown', function (event) {
+//     console.log('typing',event.target.value);
+// })
 const userEmail2 = document.getElementById ('user-email');
-userEmail2.addEventListener ('keydown', function (event) {
-    console.log('typing',event);
+userEmail2.addEventListener ('keyup', function (event) {
+    console.log('typing',event.target.value);
 })
