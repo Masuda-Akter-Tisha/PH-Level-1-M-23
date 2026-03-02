@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice Events</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 1no -->
+    <button onclick="document.body.style.backgroundColor ='yellow'">make yellow</button>
+   <!-- 2no -->
+    <button onclick="makeYellow ()">make grey</button>
+    <!-- 3no -->
+     <button id="btn-make-pink">make pink</button>
+     <button id="btn-make-purple">make purple</button>
+   <!-- 4no -->
+    <button id="btn-make-event">make event</button>
+
+    <h1 id="page-title">Event Handler</h1>
+    <button id="btn-update-title">update page title</button>
+
+    <p id="user-info">No User</p>
+    <button id="btn-login">Login</button>
+    <br>
+    <br>
+    <br>
+    <p id="user-name">User Name</p>
+    <input type="text" id="input-name" placeholder="Write Name">
+    <button id="btn-update">update</button>
+    <br>
+    <section id="comments-container">
+        <h1>All comments here</h1>
+        <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ullam!</p>
+    </section>
+    <textarea id="comment-box" cols="50" rows="5" placeholder="write Your comment..."></textarea>
+    <br>
+    <button id="btn-post">post</button>
+
+    <br>
+    <h1 id="secret-info">secret Info</h1>
+    <input type="text" id="delete-info">
+    <button id="btn-delete" disabled>Delete</button>
+      <script src="./js/practice2.js"></script>
+</body>
+</html>

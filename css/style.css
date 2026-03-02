@@ -1,0 +1,23 @@
+.btn-style {
+    font-size: 20px;
+    color: white;
+    background-color: olive;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 50px grey;
+    padding: 20px 25px;
+}
+.page-style {
+    font-size: 30px;
+    color: peru;
+    font-style: italic;
+}
+.comment {
+    font-size: 20px;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+}
