@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+    <style>
+        * {
+            font-size: 50px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploring Event Delegate</h1>
+    <ol id="item-list">
+        <li class="item">item-1</li>
+        <li class="item">item-2</li>
+        <li class="item">item-3</li>
+        <li class="item">item-4</li>
+        <li class="item">item-5</li>
+    </ol>
+    <button id="btn-add-item">add new item</button>
+    <script>
+        // const items = document.getElementsByClassName ('item');
+        // for (const item of items) {
+        //     item.addEventListener ('click', function (event) {
+        //        event.target.parentNode.removeChild (event.target);
+        // })
+        // }
+
+        //event delegate
+        const itemList = document.getElementById ('item-list');
+        itemList.addEventListener ('click', function () {
+            event.target.parentNode.removeChild (event.target);
+        })
+
+        // add a new item
+        const btnAddItem = document.getElementById ('btn-add-item');
+        btnAddItem.addEventListener ('click', function () {
+            const ol = document.getElementById ('item-list');
+
+            const li = document.createElement ('li');
+            li.innerText = 'added new brand list';
+            li.setAttribute ('class', 'item');
+            // li.addEventListener ('click', function () {
+            //     event.target.parentNode.removeChild (event.target);
+            // })
+
+            ol.appendChild (li);
+        })
+    </script>
+</body>
+</html>
